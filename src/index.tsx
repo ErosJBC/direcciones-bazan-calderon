@@ -1,10 +1,12 @@
+import { NavigationContainer } from '@react-navigation/native';
 import { FunctionComponent } from 'react';
-import { Counter, HelloWorld } from './screens';
+import { Routes } from './routes';
 
 const Render: FunctionComponent<{}> = () => {
     return (
-        // <HelloWorld />
-        <Counter />
+        <NavigationContainer>
+            <Routes />
+        </NavigationContainer>
     );
 }
 

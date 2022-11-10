@@ -34,7 +34,7 @@ const ButtonFab: FunctionComponent<IButtonFab> = ({ title, position = 'bottomRig
                 </TouchableNativeFeedback>
             </View>
         )
-    }
+    };
 
     return Platform.OS === 'ios' ? ios() : android();
 }

@@ -10,7 +10,7 @@ const Counter: FunctionComponent<{}> = () => {
     const onPressCounter: (operation: string) => void = (operation: string) => {
         if (operation === 'add') setCounter(counter + 1);
         else if (operation === 'substract') setCounter(counter - 1);
-    }
+    };
 
     return(
         <View style={styles.container}>
