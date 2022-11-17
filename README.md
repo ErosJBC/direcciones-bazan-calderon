@@ -16,3 +16,8 @@ git remote add origin URL REPOSITORY\
 git branch -M main\
 git push -u origin main
 
+## Delete reference git remote
+
+git remote rm origin
+
+# switch-bazan-calderon
