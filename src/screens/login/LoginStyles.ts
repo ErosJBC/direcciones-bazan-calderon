@@ -4,43 +4,34 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#00476e',
-        paddingTop: 80,
+        paddingTop: 20,
+        justifyContent: 'center'
     },
-    title: {
-        color: 'white',
-        fontWeight: '400',
-        alignSelf: 'center',
-        textTransform: 'uppercase',
-        fontSize: 16
-    },
-    list: {
-        flex: 1,
-        flexDirection: 'row',
-        alignSelf: 'center',
-        width: 300,
-        justifyContent: 'space-between',
+    card: {
         backgroundColor: 'white',
-        minWidth: '85%',
-        paddingHorizontal: 10,
-        paddingVertical: 10,
-        borderRadius: 10,
-        marginVertical: 5
+        height: 400,
+        margin: 30,
+        borderRadius: 5,
     },
-    textList: {
-        alignSelf: 'center',
-        fontSize: 16
+    titleCard: {
+        textAlign: 'center',
+        paddingTop: 50,
+        fontSize: 22,
+        fontWeight: '600',
+        color: '#00476e'
+    },
+    subTitleCard: {
+        textAlign: 'center',
+        paddingTop: 25,
+        fontSize: 20,
+        fontWeight: '600',
+        color: '#00476e'
     },
     containerInput: {
         width: '100%',
         alignItems: 'center',
-        marginTop: 20,
+        marginTop: 25,
         marginBottom: 40,
-    },
-    containerButtonSession: {
-        width: '100%',
-        alignItems: 'center',
-        marginTop: 10,
-        marginBottom: 30,
     },
     input: {
         height: 40,
@@ -64,6 +55,6 @@ const styles = StyleSheet.create({
         fontWeight: '600',
         marginBottom: 15
     }
-})
+});
 
 export default styles;

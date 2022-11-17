@@ -1,11 +1,11 @@
 import { Button, FlatList, View, Text, TextInput } from 'react-native'
 import React, { FunctionComponent, useState } from 'react'
-import { ISaving } from '../../models';
+import { INavigation, ISaving } from '../../models';
 import { SavingsList } from '../../data';
 import styles from './SavingsStyles';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
-const Savings: FunctionComponent<{}> = () => {
+const Savings: FunctionComponent<INavigation> = ({ navigation } : INavigation) => {
 
     const [savingsLst, setSavingLst] = useState<ISaving[]>(SavingsList);
     const [text, setText] = useState<string>('');
@@ -40,11 +40,20 @@ const Savings: FunctionComponent<{}> = () => {
         )
     }
 
+    const closeSession: () => void = () => navigation.navigate('Login');
+
     const onChangeText: (text: string) => void = (text: string) => setText(text);
     const onChangeAmount: (amount: string) => void = (amount: string) => setAmount(amount);
 
     return (
         <View style={styles.container}>
+            <View style={styles.containerButtonSession}>
+                <Button
+                    title='Cerrar Sesión'
+                    color='#ff3d50'
+                    onPress={() => closeSession()}
+                />
+            </View>
             <Text style={styles.title}>App de Ahorros</Text>
             <View style={styles.containerInput}>
                 <TextInput
