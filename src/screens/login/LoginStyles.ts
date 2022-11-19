@@ -16,14 +16,16 @@ const styles = StyleSheet.create({
     titleCard: {
         textAlign: 'center',
         paddingTop: 50,
-        fontSize: 22,
+        fontSize: 20,
         fontWeight: '600',
+        fontFamily: 'JetBrainsMonoBold',
         color: '#00476e'
     },
     subTitleCard: {
         textAlign: 'center',
         paddingTop: 25,
-        fontSize: 20,
+        fontSize: 18,
+        fontFamily: 'JetBrainsMonoMedium',
         fontWeight: '600',
         color: '#00476e'
     },
@@ -38,6 +40,8 @@ const styles = StyleSheet.create({
         margin: 8,
         borderWidth: 0.5,
         padding: 10,
+        fontSize: 12,
+        fontFamily: 'JetBrainsMonoThin',
         width: '85%',
         alignSelf: 'center',
         backgroundColor: 'white',

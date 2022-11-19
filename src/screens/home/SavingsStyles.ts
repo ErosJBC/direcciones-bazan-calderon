@@ -11,7 +11,8 @@ const styles = StyleSheet.create({
         fontWeight: '400',
         alignSelf: 'center',
         textTransform: 'uppercase',
-        fontSize: 16
+        fontSize: 16,
+        fontFamily: 'JetBrainsMonoMedium',
     },
     list: {
         flex: 1,
@@ -28,7 +29,8 @@ const styles = StyleSheet.create({
     },
     textList: {
         alignSelf: 'center',
-        fontSize: 16
+        fontSize: 12.5,
+        fontFamily: 'JetBrainsMonoRegular',
     },
     containerInput: {
         width: '100%',
@@ -47,6 +49,8 @@ const styles = StyleSheet.create({
         margin: 8,
         borderWidth: 0.5,
         padding: 10,
+        fontSize: 12,
+        fontFamily: 'JetBrainsMonoThin',
         width: '85%',
         alignSelf: 'center',
         backgroundColor: 'white',
@@ -61,7 +65,8 @@ const styles = StyleSheet.create({
         padding: 5,
         paddingHorizontal: 20,
         borderRadius: 5,
-        fontWeight: '600',
+        fontSize: 12,
+        fontFamily: 'JetBrainsMonoMedium',
         marginBottom: 15
     }
 })
