@@ -58,6 +58,14 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         fontWeight: '600',
         marginBottom: 15
+    },
+    titleBack: {
+        fontSize: 18,
+        fontWeight: '600',
+        textAlign: 'center',
+        textDecorationLine: 'underline',
+        letterSpacing: 0.5,
+        color: 'white'
     }
 });
 

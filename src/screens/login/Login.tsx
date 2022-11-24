@@ -1,4 +1,4 @@
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, Text, TextInput, Button, Pressable } from 'react-native';
 import { FunctionComponent, useState } from 'react';
 import { USERNAME, PASSWORD } from '../../constants';
 import { INavigation } from '../../models';
@@ -9,6 +9,8 @@ const Login: FunctionComponent<INavigation> = ({ navigation } : INavigation) => 
     const [username, setUsername] = useState<string>('');
     const [password, setPassword] = useState<string>('');
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+    const navigateTo: (pathName: string) => void = (pathName: string) => navigation.navigate(pathName);
 
     const onChangeUsername: (username: string) => void = (username: string) => setUsername(username);
     const onChangePassword: (password: string) => void = (password: string) => setPassword(password);
@@ -28,6 +30,9 @@ const Login: FunctionComponent<INavigation> = ({ navigation } : INavigation) => 
 
     return (
         <View style={styles.container}>
+            <Pressable onPress={() => navigateTo('Home')}>
+                <Text style={styles.titleBack}>Ir al inicio</Text>
+            </Pressable>
             <View style={styles.card}>
                 <Text style={styles.titleCard}>Bienvenido a SavingsApp</Text>
                 <Text style={styles.subTitleCard}>Iniciar Sesión</Text>
