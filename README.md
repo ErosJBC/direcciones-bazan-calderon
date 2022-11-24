@@ -2,7 +2,7 @@
 
 ## Create a new repository on the command line
 
-echo "# switch-bazan-calderon" >> README.md\
+echo "# vistas-app-bazan-calderon" >> README.md\
 git init\
 git add README.md\
 git commit -m "first commit"\
@@ -19,5 +19,3 @@ git push -u origin main
 ## Delete reference git remote
 
 git remote rm origin
-
-# switch-bazan-calderon
