@@ -1,5 +1,4 @@
 import { createStackNavigator } from '@react-navigation/stack'
-import { View, Text } from 'react-native'
 import { Counter, Home, Login, Savings } from '../screens'
 
 const Stack = createStackNavigator();

@@ -1,10 +1,11 @@
 import { FunctionComponent } from 'react';
 import { View } from 'react-native';
-import { Routes } from './routes';
+import { Navigator, Routes } from './routes';
 
 const Render: FunctionComponent<{}> = () => {
     return (
-        <Routes />
+        // <Routes />
+        <Navigator />
     );
 }
 

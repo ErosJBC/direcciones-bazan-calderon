@@ -27,7 +27,8 @@ const styles = StyleSheet.create({
     },
     buttonFabText: {
         color: 'white',
-        fontSize: 25,
+        fontFamily: 'JetBrainsMonoMedium',
+        fontSize: 20,
         fontWeight: 'bold',
         alignSelf: 'center',
         textAlign: 'center'

@@ -4,11 +4,12 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
-        position: 'relative'
+        position: 'relative',
     },
     text: {
         fontSize: 25,
         textAlign: 'center',
+        fontFamily: 'JetBrainsMonoMedium'
     },
     titleBack: {
         top: -300,

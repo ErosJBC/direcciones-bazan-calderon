@@ -17,9 +17,9 @@ const Counter: FunctionComponent<INavigation> = ({ navigation }: INavigation) =>
 
     return(
         <View style={styles.container}>
-            <Pressable onPress={() => navigateTo('Home')}>
+            {/* <Pressable onPress={() => navigateTo('Home')}>
                 <Text style={styles.titleBack}>Ir al inicio</Text>
-            </Pressable>
+            </Pressable> */}
             <Text style={styles.text}>Contador: { counter }</Text>
             <ButtonFab title="-1" onPress={() => onPressCounter('substract')} position="bottomLeft" />
             <ButtonFab title="+1" onPress={() => onPressCounter('add')} position="bottomRight" />

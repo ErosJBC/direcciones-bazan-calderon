@@ -47,13 +47,13 @@ const Savings: FunctionComponent<INavigation> = ({ navigation } : INavigation) =
 
     return (
         <View style={styles.container}>
-            <View style={styles.containerButtonSession}>
+            {/* <View style={styles.containerButtonSession}>
                 <Button
                     title='Cerrar Sesión'
                     color='#ff3d50'
                     onPress={() => closeSession()}
                 />
-            </View>
+            </View> */}
             <Text style={styles.title}>App de Ahorros</Text>
             <View style={styles.containerInput}>
                 <TextInput
