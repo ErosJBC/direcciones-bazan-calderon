@@ -1,15 +1,19 @@
 import { Button, FlatList, View, Text, TextInput } from 'react-native'
-import React, { FunctionComponent, useState } from 'react'
+import React, { FunctionComponent, useEffect, useState } from 'react'
 import { INavigation, ISaving } from '../../models';
 import { SavingsList } from '../../data';
 import styles from './SavingsStyles';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { useSelector, useDispatch } from 'react-redux';
+import { asignAmount, clearAmount } from '../../store/actions';
 
 const Savings: FunctionComponent<INavigation> = ({ navigation } : INavigation) => {
 
+    const amount: string = useSelector<number, any>((state: any) => state.saveAmount.currentAmount).toString();
+    const dispatch = useDispatch();
+
     const [savingsLst, setSavingLst] = useState<ISaving[]>(SavingsList);
     const [text, setText] = useState<string>('');
-    const [amount, setAmount] = useState<string>('');
     const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
     const deleteSavingItem: (idSaving: number) => void = (idSaving: number) => {
@@ -22,7 +26,7 @@ const Savings: FunctionComponent<INavigation> = ({ navigation } : INavigation) =
             setSavingLst((prevList: ISaving[]) => [...prevList, { id: idItem, text: text, amount: amount }]);
             setErrorMessage(null);
             setText('');
-            setAmount('');
+            dispatch(clearAmount(parseInt('')))
         } else {
             setErrorMessage('Los campos son obligatorios');
         }
@@ -43,7 +47,7 @@ const Savings: FunctionComponent<INavigation> = ({ navigation } : INavigation) =
     const closeSession: () => void = () => navigation.navigate('Login');
 
     const onChangeText: (text: string) => void = (text: string) => setText(text);
-    const onChangeAmount: (amount: string) => void = (amount: string) => setAmount(amount);
+    const onChangeAmount: (amount: string) => void = (amount: string) => dispatch(asignAmount(parseInt(amount)));
 
     return (
         <View style={styles.container}>

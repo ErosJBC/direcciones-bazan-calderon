@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'react';
-import { View } from 'react-native';
 import { Navigator, Routes } from './routes';
 
 const Render: FunctionComponent<{}> = () => {

@@ -1,8 +1,9 @@
 import 'react-native-gesture-handler';
 import { FunctionComponent } from 'react';
 import Render from './src';
-import { NavigationContainer } from '@react-navigation/native';
 import { useFonts } from 'expo-font';
+import { Provider } from 'react-redux';
+import store from './src/store';
 
 const App: FunctionComponent<{}> = () => {
 
@@ -17,9 +18,9 @@ const App: FunctionComponent<{}> = () => {
     if (!loaded) return null;
 
     return (
-        <NavigationContainer>
+        <Provider store={store}>
             <Render />
-        </NavigationContainer>
+        </Provider>
     );
 }
 

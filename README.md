@@ -1,8 +1,8 @@
-# tabnav-bazan-calderon
+# state-redux-bazan-calderon
 
 ## Create a new repository on the command line
 
-echo "# tabnav-bazan-calderon" >> README.md\
+echo "# state-redux-bazan-calderon" >> README.md\
 git init\
 git add README.md\
 git commit -m "first commit"\
