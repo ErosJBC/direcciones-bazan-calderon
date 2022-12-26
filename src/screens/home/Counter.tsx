@@ -1,4 +1,4 @@
-import { FunctionComponent, useState } from "react";
+import { FunctionComponent } from "react";
 import { Text, View, Pressable } from "react-native";
 import { useSelector, useDispatch } from "react-redux";
 import { ButtonFab } from "../../components";

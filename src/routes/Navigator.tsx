@@ -1,8 +1,9 @@
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { NavigationContainer } from '@react-navigation/native';
-import { Counter, Savings } from '../screens';
+import { Address, Counter, Savings } from '../screens';
 import MCI from 'react-native-vector-icons/MaterialCommunityIcons';
 import FA from 'react-native-vector-icons/FontAwesome5';
+import ET from 'react-native-vector-icons/Entypo';
 
 const Tab = createBottomTabNavigator();
 
@@ -40,6 +41,15 @@ const Navigator = () => {
                     options={{
                         tabBarIcon: ({ color }) => {
                             return <FA name='money-bill-wave' color={color} size={15} />
+                        }
+                    }}
+                />
+                <Tab.Screen
+                    name='Dirección'
+                    component={Address}
+                    options={{
+                        tabBarIcon: ({ color }) => {
+                            return <ET name='location' color={color} size={18} />
                         }
                     }}
                 />

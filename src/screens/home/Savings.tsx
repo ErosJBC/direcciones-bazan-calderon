@@ -1,5 +1,5 @@
 import { Button, FlatList, View, Text, TextInput } from 'react-native'
-import React, { FunctionComponent, useEffect, useState } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import { INavigation, ISaving } from '../../models';
 import { SavingsList } from '../../data';
 import styles from './SavingsStyles';
