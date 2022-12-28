@@ -1,8 +1,8 @@
-# features-bazan-calderon
+# direcciones-bazan-calderon
 
 ## Create a new repository on the command line
 
-echo "# features-bazan-calderon" >> README.md\
+echo "# direcciones-bazan-calderon" >> README.md\
 git init\
 git add README.md\
 git commit -m "first commit"\
